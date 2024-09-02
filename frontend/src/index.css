@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signupform {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7px;
+
+    h2 {
+        color: #440dae;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+
+    .form-wrapper {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 12px;
+        border: 1px solid #3949AB;
+
+        box-shadow: 5px 5px 7px #001080d1;
+
+        div{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        p {
+            font-weight: bolder;
+            color: #1A237E;
+        }
+
+        input {
+            all: unset;
+            width: 310px;
+            border: 2px solid #F8BBD0;
+            border-radius: 10px;
+            padding: 6px;
+        }
+
+
+        button {
+            all: unset;
+            width: 30%;
+            text-align: center;
+            padding: 14px 10px;
+            /* border: 1px solid black; */
+            border-radius: 12px;
+            background-color: rgb(101, 101, 219);
+            color: white;
+            font-weight: 700;
+            position: relative;
+            margin-top: 40px;
+            cursor: pointer;
+            margin-bottom: 20px
+        }
+
+    }
+}
+
+.add-to-do {
+    width: 60%;
+    padding: 10px;
+    /* margin: 0 auto; */
+
+    .add-todo-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+
+        input {
+            all: unset;
+            width: 50%;
+            border: 2px solid #7E57C2;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        textarea {
+            all: unset;
+            width: 80%;
+            padding: 10px;
+            border: 2px solid #673AB7;
+            border-radius: 10px;
+        }
+
+        button {
+            all: unset;
+            width: 30%;
+            text-align: center;
+            padding: 12px;
+            align-self: center;
+            cursor: pointer;
+            background-color: #5E35B1;
+            color: white;
+            font-weight: 700;
+            border-radius: 10px;
+        }
+    }
+
+    .add-btn {
+        width: 20%;
+        cursor: pointer;
+        text-align: center;
+        padding: 10px 8px;
+        font-size: large;
+        border-radius: 10px;
+        background-color: rgb(76, 76, 173);
+        color: white;
+    }
+}
+
+.home {
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 2px;
+    /* height: 640px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+    padding: 20px;
+
+    .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 23px
+    }
+
+    h2 {
+        font-size: xx-large
+    }
+
+    .logout-btn {
+        position: absolute;
+        left: 53%;
+        top: 8%;
+        width: 20%;
+    }
+
+
+    button {
+        all: unset;
+        width: 30%;
+        cursor: pointer;
+        text-align: center;
+        padding: 12px;
+        border-radius: 10px;
+        background-color: rgb(232, 52, 52);
+        color: white;
+    }
+}
+
+.no-todo-to-show {
+    color: #ff0000;
+    font-size: xx-large
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid black; */
+    /* max-height: 384px; */
+    padding: 20px;
+    overflow-y: auto;
+
+    .todo {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 5px;
+        background-color: #ffcdd252;
+        border-radius: 10px;
+
+        .btn-grp {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            button {
+                width: 15%;
+                padding: 7px;
+            }
+        }
+    }
+}
+
+.edit-to-do{
+    /* border: 1px solid black; */
+    padding: 10px;
+    width: 60%;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    input{
+        all: unset;
+        width: 60%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #7E57C2;
+        align-self: center;
+    }
+
+    textarea{
+        all: unset;
+        width: 60%;
+        height: 70px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #7E57C2;
+        align-self: center;
+    }
+
+    button{
+        all: unset;
+        width: 25%;
+        align-self: center;
+        /* border: 1px solid black; */
+        padding: 12px;
+        border-radius: 12px;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: #EF5350;
+        color: white;
+        font-size: 16px;
+        font-weight: 700
+    }
+    h1{
+        align-self: center;
+    }
+}
